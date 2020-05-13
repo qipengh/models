@@ -59,12 +59,12 @@ tf.compat.v1.app.flags.DEFINE_string(
     None,
     'The directory where the output TFRecords and temporary files are saved.')
 
-tf.flags.DEFINE_float(
+tf.compat.v1.app.flags.DEFINE_float(
     'small_object_area_threshold', 0.005,
     'For --dataset_name=visualwakewords only. Threshold of fraction of image '
     'area below which small objects are filtered')
 
-tf.flags.DEFINE_string(
+tf.compat.v1.app.flags.DEFINE_string(
     'foreground_class_of_interest', 'person',
     'For --dataset_name=visualwakewords only. Build a binary classifier based '
     'on the presence or absence of this object in the image.')
